@@ -9,6 +9,7 @@
     "ft ft ft ft ft ft";
   border: 2px solid purple;
   font-family: 'Montserrat', sans-serif;
+  width: 100%;
 }
 
 .header {
@@ -23,6 +24,10 @@
   grid-area: ca;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  /* display: grid;
+  grid-template-columns: subgrid;
+  grid-template-rows: subgrid; */
   font-size: 1em;
 }
 
@@ -48,14 +53,17 @@
 
 .card {
   border: 1px solid green;
-  width: 33%;
+  /* width: 30%; */
   margin: 1%;
   padding: 1%;
   background-color: lightgray;
 }
 
 .cardcontainer {
-  display: flex;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 30%);
+  grid-auto-rows: auto;
   padding: 2%;
   border: 2px solid salmon;
 }
@@ -75,9 +83,10 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 4fr 1fr;
     grid-template-areas:
-      "hd hd hd hd"
-      "sb ca ca ca"
-      "ft ft ft ft";
+      "hd"
+      "sb"
+      "ca"
+      "ft";
   }
 }
 
@@ -89,7 +98,7 @@
     grid-auto-rows: auto;
     grid-template-areas:
       "hd hd hd hd hd hd hd hd"
-      "sb sb ca ca ca ca ca ca"
+      "sb ca ca ca ca ca ca ca"
       "ft ft ft ft ft ft ft ft";
   }
 }
