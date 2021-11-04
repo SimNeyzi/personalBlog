@@ -77,12 +77,12 @@ article {
 }
 
 
-.fb, .twitter {
+.fb, .twitter, .linkedIn {
   width: 3em;
   height: 3em;
 }
 
-.fb_link, .twit_link{
+.fb_link, .twit_link, .linkedIn_link{
   text-decoration: none;
 }
 
