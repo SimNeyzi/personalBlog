@@ -1,6 +1,6 @@
 .post_container {
   display: grid;
-  grid-template-columns: 400px;
+  grid-template-columns: 99vw;
   grid-template-rows: 0.2fr 1fr 4fr;
   font-family: 'Montserrat', sans-serif;
   font-size: 1em;
@@ -16,6 +16,7 @@
 .home_link {
   font-size: 1.5em;
   grid-area: hd;
+  padding: 2%;
 }
 
 .author {
@@ -54,14 +55,16 @@
 }
 
 article {
-  margin: 0 0 2% 0;
   grid-area: bl;
   background-color: seashell;
+  padding: 2%;
+  margin-bottom: 1%;;
 }
 
 
 .share_buttons{
   grid-area: sh;
+  padding-left:2%;
 }
 
 .follow, .subscribe {
@@ -96,6 +99,8 @@ article {
     "bl bl"
     "sh sh"
     "ft ft";
+    width: 100vw;
+    height:100vh;
   }
 }
 
@@ -111,5 +116,7 @@ article {
       "bl bl bl bl"
       "sh sh sh sh"
       "ft ft ft ft";
+    width: 100vw;
+    height:100vh;
   }
 }
