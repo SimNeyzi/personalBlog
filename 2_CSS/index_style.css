@@ -1,5 +1,5 @@
-@import url("post_style.css");
-@import url("card_style.css");
+@import url("index_Page.css");
+@import url("index_Page_Card.css");
 
 *{
   box-sizing: border-box;
@@ -117,7 +117,6 @@
     width: 100vw;
     height:100vh;
   }
-
 
   .cardcontainer{
     display: grid;
